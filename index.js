@@ -139,7 +139,7 @@ Email Address: ${data.emailAddress}
 function init() {
     writeToFile()
         .then((data) => writeFileAsync('README.md', generateREADME(data)))
-        .then(() => console.log('Successfully wrote to README.md'))
+        .then(() => console.log('Successfully wrote to README.md.'))
         .catch((err) => console.log(err));
 };
 

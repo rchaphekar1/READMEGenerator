@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/npm/l/inquirer)
 
-![README Generator]() // Include screenshot or gif of application in parantheses
+![README Generator](https://user-images.githubusercontent.com/46513647/105769373-576a2400-5f23-11eb-89d9-8857025ea8d5.mp4)
 
 <hr>
 
