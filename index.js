@@ -65,7 +65,7 @@ const writeToFile = () =>
                 type: 'checkbox',
                 name: 'license',
                 message: questions[8],
-                choices: ['Inquirer'],
+                choices: ['inquirer'],
             },
         ]);
 
@@ -131,6 +131,7 @@ SOFTWARE.
 ## Questions
 
 Link to my Github: ${data.githubLink}
+<br>
 Email Address: ${data.emailAddress}
 `;
 

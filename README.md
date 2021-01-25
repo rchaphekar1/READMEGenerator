@@ -1,6 +1,6 @@
 # README Generator
 
-![License](https://img.shields.io/npm/l/Inquirer)
+![License](https://img.shields.io/npm/l/inquirer)
 
 ![README Generator]() // Include screenshot or gif of application in parantheses
 
@@ -59,4 +59,5 @@ SOFTWARE.
 ## Questions
 
 Link to my Github: https://github.com/rchaphekar1
+<br>
 Email Address: rchaphekar1@gmail.com
