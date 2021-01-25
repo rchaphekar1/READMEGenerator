@@ -9,8 +9,12 @@ const questions = [
     "What is the name of your project?",
     "Please provide a link to your Github repo.",
     "Please provide a quick description of your project.",
+    "What packages must be installed for your project?",
+    "Please provide instructions for your project and examples for use.",
     "What is your name?",
-    "Please provide a link to your personal Github."
+    "Please provide a link to your personal Github.",
+    "Please enter your email address.",
+    "Please select which npm license you would like to add."
 ];
 
 // function to write README file
@@ -34,28 +38,69 @@ const writeToFile = () =>
             },
             {
                 type: 'input',
-                name: 'userName',
+                name: 'installation',
                 message: questions[3],
             },
             {
                 type: 'input',
+                name: 'usage',
+                message: questions[4]
+            },
+            {
+                type: 'input',
+                name: 'userName',
+                message: questions[5],
+            },
+            {
+                type: 'input',
                 name: 'githubLink',
-                message: questions[4],
+                message: questions[6],
+            },
+            {
+                type: 'input',
+                name: 'emailAddress',
+                message: questions[7],
+            },
+            {
+                type: 'checkbox',
+                name: 'license',
+                message: questions[8],
+                choices: ['Inquirer'],
             },
         ]);
 
 const generateREADME = (data) =>
 `# ${data.projectName}
 
-// Include screenshot or gif of application here
+![License](https://img.shields.io/npm/l/${data.license})
+
+![${data.projectName}]() // Include screenshot or gif of application in parantheses
 
 <hr>
+
+## Table of Contents
+<ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#credits">Credits</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#questions">Questions</a></li>
+</ul>
 
 ## Description
 
 ${data.githubRepo}
 
 ${data.description}
+
+## Installation
+
+install ${data.installation}
+
+## Usage
+
+${data.usage}
 
 ## Credits
 
@@ -82,6 +127,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Questions
+
+Link to my Github: ${data.githubLink}
+Email Address: ${data.emailAddress}
 `;
 
 // function to initialize program

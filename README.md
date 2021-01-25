@@ -1,12 +1,34 @@
 # README Generator
 
+![License](https://img.shields.io/npm/l/Inquirer)
+
+![README Generator]() // Include screenshot or gif of application in parantheses
+
 <hr>
+
+## Table of Contents
+<ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#credits">Credits</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#questions">Questions</a></li>
+</ul>
 
 ## Description
 
 https://github.com/rchaphekar1/READMEGenerator
 
 An application that generates a README.md file using node.js.
+
+## Installation
+
+install npm, inquirer
+
+## Usage
+
+Run the index.js file in node and answer questions to develop your README.
 
 ## Credits
 
@@ -33,3 +55,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Questions
+
+Link to my Github: https://github.com/rchaphekar1
+Email Address: rchaphekar1@gmail.com
